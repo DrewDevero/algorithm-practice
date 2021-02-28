@@ -1,3 +1,6 @@
+// The following creates a hash table
+// arrays assignments are used to handle collisions though linked lists are preferable - will revist upon learning more about linked list implementation
+
 let hashTable = Array(10);
 let hashLength = hashTable.length;
 for(let i = 0; i < hashLength; i++) {
