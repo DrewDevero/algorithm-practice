@@ -1,5 +1,5 @@
 ### Learning and Practicing Algorithms
 ## To Practice ##
-***- Hash Maps ***
-***- Linked Lists ***
-***- Bubble Sort ***
+***- Hash Maps***
+***- Linked Lists***
+***- Bubble Sort***
