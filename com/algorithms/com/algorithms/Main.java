@@ -5,6 +5,9 @@ import com.algorithms.model.Array;
 
 public class Main {
     public static void main(String[] args) {
+
+        HashMap<String, String> planetsFromSun = new HashMap<String, String>(8);
+
         int[] numbers = new int[10];
         numbers[0] = 3;
         numbers[2] = 5;
@@ -22,5 +25,19 @@ public class Main {
         evenMoreNumbers.remove(0);
 
         evenMoreNumbers.print();
+
+        planetsFromSun.put("First", "Mercury");
+        planetsFromSun.put("Second","Venus");
+        planetsFromSun.put("Third", "Earth");
+
+        for(String key : planetsFromSun.keySet()) {
+        System.out.println("Key: " + key + "   Value: " + planetsFromSun.get(key));
+        }
+    
+        System.out.println(planetsFromSun.size());
+
+        planetsFromSun.remove("second");
+        
+        System.out.print(planetsFromSun);
     }
 }
