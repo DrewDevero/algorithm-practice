@@ -3,13 +3,14 @@ package com.algorithms;
 import java.util.*;
 import com.algorithms.model.Array;
 
-import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
-
 public class Main {
     public static void main(String[] args) {
 
         HashMap<String, String> planetsFromSun = new HashMap<String, String>();
         Map<String, Integer> people = new HashMap<>();
+        HashMap<String, Integer> objects = new HashMap<String, Integer>();
+
+        int createObjects = 1;
 
         int[] numbers = new int[10];
         numbers[0] = 3;
@@ -64,5 +65,13 @@ public class Main {
             String key = iterator.next();
             System.out.println(key + ": " + people.get(key));
         }
+
+        while(createObjects < 11) {
+            String key = "Object" + String.valueOf(createObjects);
+            objects.put( key, createObjects);
+            System.out.println("Key: " + key + " Value: " + objects.get(key));
+            createObjects++;
+        }
+        System.out.println(objects);
     }
 }
